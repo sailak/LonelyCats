@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cat Love - Lonely Cats Near You</title>
+	<meta name="viewport" content="width=900">	
+	<meta name="description" content="Recruitment Exercise">
+	<meta name="author" content="Saila Kurtti">
+  	
+  	<link rel="stylesheet" href="style.css">
+  	<link rel="stylesheet" href="bjqs.css">
+  
+  	<script type="text/javascript" src="jq/jquery.js"></script>  
+  	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+   	<script src="jq/bjqs-1.3.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  <script type="text/javascript">
+  $(document).ready(function() {
+  	$('a.login-window').click(function() {
+		
+		var loginBox = $(this).attr('href');
+
+		$(loginBox).fadeIn(300);
+		
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+});
+</script>
+</head>
+
+<body>
+
+
+ <!-- ********* Section 1 ********* -->
+
+	<div id="wrap_sec1">
+	<section id="sec1">
+		<div id="logo"></div>
+		<div id="sec1_left">The <span class="place">place</span> to find another cat.</div>
+		<div id="sec1_right"><a href="#login-box" class="login-window">MEOW, SIGN UP!</a></div>
+		
+		 <div id="login-box" class="login-popup"><h1>Login</h1>
+        <a href="#" class="close">X</a>
+          <form method="post" class="signin" action="#">
+                <fieldset class="textbox">
+                
+            	<label class="username">
+                <input id="username" name="username" value="" type="text" autocomplete="on" placeholder="CatnamePlaceholder">
+                </label>
+                
+                <label class="password">
+                <input id="password" name="password" value="" type="password" placeholder="CatpasswordPlaceholder">
+                </label>
+                
+                <button class="submit button" type="button">Login</button>                
+                </fieldset>
+          </form>
+		</div>
+		
+	</section>
+	</div>
+
+ <!-- ********* Section 2 ********* -->
+
+	<div id="wrap_sec2">
+	<section id="sec2"><h1>Lonely cats near you</h1>
+      <div id="slider_area">
+        <!-- Slideri -->
+        <ul class="bjqs">
+          <li>
+          <div class="circular"><img src="img/grumpy.jpg" alt="grumpy" /></div>
+          <div class="introduction">
+          <h2>Grumpy</h2> 
+          <p>I am a 7-year-old guy, looking for a cute girl cat to cheer up my life! 
+          <a href="#login-box" class="login-window">Meow, send a message to Grumpy!</a></p></div>
+          </li>
+
+          <li>
+          <div class="circular"><img src="img/cheeseburgerlover.jpg" alt="cheeseburgerlover" /></div>
+          <div class="introduction">
+          <h2>CheezeburgerLover</h2> 
+          <p>Can I haz cat company? 
+          <a href="#login-box" class="login-window">Meow, send a message to CheezeburgerLover!</a></p></div>
+          </li>
+
+          <li>
+          <div class="circular"><img src="img/hover.jpg" alt="hover" /></div>
+          <div class="introduction">
+          <h2>Hover</h2> 
+          <p>Waddup! I like to hover around! I'd like some pretty cat to have some sweet sweet casual meow with me ;)
+          <a href="#login-box" class="login-window">Meow, send a message to Hover!</a> </p></div>
+          </li>
+        </ul>
+        <!-- Slideri loppuu -->
+
+      </div>
+      
+      <!-- Sliderin toiminnallisuuden määrityksiä -->
+      <script class="secret-source">
+        jQuery(document).ready(function($) {
+          
+          $('#slider_area').bjqs({
+            animtype      : 'slide',
+            height        : 270,
+            width         : 800,
+            responsive    : true,
+            randomstart   : true,
+            showcontrols : false,
+            animspeed : 3000
+
+          });
+          
+        });
+      </script><!-- Toiminnallisuudet loppuu -->
+	</section>
+	</div>
+
+ <!-- ********* Section 3 ********* -->
+
+	<div id="wrap_sec3">
+	<section id="sec3">
+    <h1>Looking for that special someone <br>...or just a hot cat for some “casual meow” </h1>
+    <p>CatLove.com is the place to find it with over 4 300 000 registered partner seeking cats and over 3 000 active cats on the website any given moment.</p>
+
+          <div class="circular_text"><h3>4.3M</h3> <h4>registered cats</h4></div>
+          <div class="circular_text"><h3>3000</h3> <h4>or more active cats all the time</h4></div>
+          <div class="circular_text"><a href="#login-box" class="login-window"><h3>MEOW</h3> <h4>Find out more!</h4></a></div>
+	</section>
+	</div>
+
+<!-- ********* Section 4 ********* -->
+
+	<div id="wrap_sec4">
+	<section id="sec4">
+    <div id="sec4_left"><h1>Footer text</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis tellus tempus, sagittis metus vel, tempus nulla. Ut faucibus nec neque id malesuada. Aenean purus mauris, lobortis eu quam vitae, sagittis accumsan urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ac suscipit diam. Etiam odio velit, accumsan sed est ac, dapibus gravida purus. Suspendisse posuere vehicula elementum. Fusce vitae ultricies nisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus sit amet sem quam. </p></div>
+    <div id="sec4_right"><h1>Some list</h1>
+      <ul>
+        <li>Foo is a list item</li>
+        <li>Bar is another list item, sure</li>
+        <li>Baz is the last item on this list</li>
+      </ul>
+	</div>
+	</section>
+	</div>
+
+
+
+</body>
+</html>
