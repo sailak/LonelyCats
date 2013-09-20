@@ -1,0 +1,311 @@
+@import url(http://fonts.googleapis.com/css?family=Sniglet:800);
+
+
+body{
+    top:0px;
+    left:0px;
+    margin:0 auto; 
+    font-family: "Comic Sans MS", sans-serif !important;
+}
+a{
+	text-decoration: none;
+}
+
+
+
+/************* Wrappialueiden määrityksiä **************/
+
+#wrap_sec1 {
+	top:0px;
+	background-image: url(img/section1_bgr.jpg);
+	background-repeat: repeat-x;
+	height: 440px;
+}
+#wrap_sec2 {
+	top:0px;
+	background-image: url(img/section2_bgr.jpg);
+	background-repeat: repeat-x;
+	height: 450px;
+}
+#wrap_sec3 {
+	top:0px;
+	background-image: url(img/section3_bgr.jpg);
+	background-repeat: repeat-x;
+	height: 450px;
+}
+#wrap_sec4 {
+	bottom:0px;
+	background-image: url(img/section4_bgr.jpg);
+	background-repeat: repeat-x;
+	height: 300px;
+}
+section{
+	margin:0 auto;
+	width: 800px;
+}
+
+
+
+
+/************* Section-alueiden määrityksiä **************/
+
+
+/************* Sec 1 **************/
+#sec1{
+	background-image: url(img/header-img.jpg);
+	background-size: 100% 100%;
+	height: 440px;
+	position:relative;
+}
+
+#logo{
+	height: 100px;
+	width: 300px;
+	background-image: url(img/logo.gif);
+	background-size: 100% 100%;
+    position: absolute;
+    top: 3em;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+#sec1_left{
+	display: block;
+	padding: 30px 50px;
+	position: absolute;
+	bottom: 3em;
+	font-size: 1.4em;
+	text-shadow: 2px 2px #ffffff;
+	color: #E47D7E;
+}
+.place{
+	font-weight: bold;
+}
+#sec1_right{
+	font-family: 'Sniglet', cursive;
+	position: absolute;
+	right: 0;
+	bottom: 2em;
+	right: 1em;
+	font-size: 2em;
+}
+
+#sec1_right a{
+	text-decoration: none;
+	display: block;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background-color: #E47D7E;
+	padding: 30px;
+	color: #ffffff;
+	line-height: 1em;
+	box-shadow: 3px 3px 10px #ffffff;
+}
+
+
+
+
+/************* Sec 2 **************/
+
+#sec2{
+}
+#sec2 h1{
+	font-size: 2em;
+	text-align: center;
+	text-shadow: 2px 2px #ffffff;
+	margin: 0;
+	padding: 30px 0 20px 0;
+	font-family: 'Sniglet', cursive;
+	color: #E47D7E;
+	text-transform: uppercase;
+}
+#sec2 h2{
+    font-family: "Comic Sans MS", sans-serif !important;
+    font-size: 2.6em;
+    color: #7F3B3C;
+    margin: 0;
+    padding: 5px;
+}
+
+#sec2 p{
+    font-family: "Comic Sans MS", sans-serif !important;
+    font-size: 1.6em;
+    color: #7F3B3C;
+}
+
+
+
+
+/************* Sec 3 **************/
+
+#sec3{
+	position:relative;
+}
+#sec3 h1{
+    font-family: 'Sniglet', cursive;
+	color: #E47D7E;
+	font-size: 1.8em;
+    margin: 0;
+    padding: 25px 0 10px 0;
+}
+#sec3 p{
+    font-family: "Comic Sans MS", sans-serif !important;
+    font-size: 1.2em;
+    color: #7F3B3C;
+}
+.circular img {
+	width: 230px;
+	height: 230px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	float: left;
+	margin: 2px 15px;
+}
+.introduction{
+	width: 500px;
+	float: right;
+	line-height: 2.2em;
+}
+.introduction a{
+	color: #E37C7B;
+	text-decoration: none;
+}
+.circular_text {
+	width: 230px;
+	height: 230px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	float: left;
+	margin: 2px 18px;
+	background-color: #E47D7E;
+	vertical-align: middle;
+}
+.circular_text h3{
+    text-align: center;
+    color: #ffffff;
+    font-size: 3.2em;
+    line-height: 0;
+    padding-top: 15%;
+    font-weight: lighter;
+}
+.circular_text h4{
+    text-align: center;
+    line-height: 1.2em;
+    font-weight: lighter;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+
+
+
+
+/************* Sec 4 **************/
+
+#sec4{
+	padding-top: 50px;
+}
+
+#sec4 p{
+	color: #F5EEE4;
+	font-size: 0.8em;
+}
+
+#sec4_left{
+	float: left;
+	width: 60%;
+}
+#sec4_left h1, #sec4_right h1{
+	margin: 0;
+	font-family: 'Sniglet', cursive;
+	color: #F5EEE4;
+	font-size: 1.8em;
+
+}
+#sec4_right{
+	float: right;
+	width: 35%;
+}
+#sec4_right li{
+	list-style-type: disc;
+	color: #F5EEE4;
+	padding-bottom: 10px;
+}
+
+
+
+/************* modaali-ikkunan määrityksiä **************/
+
+#mask {
+	display: none;
+	background: #E47D7E; 
+	position: fixed; left: 0; top: 0; 
+	z-index: 10;
+	width: 100%; height: 100%;
+	opacity: 0.8;
+	z-index: 999;
+}
+
+.login-popup{
+	display:none;
+	background: #F3EFE4;
+	padding: 10px 30px; 	
+	float: left;
+	font-size: 1.2em;
+	width: 450px;
+	position: fixed;
+	top: 50%; left: 50%;
+	z-index: 99999;
+	box-shadow: 0px 0px 20px #333;
+	-moz-box-shadow: 0px 0px 20px #333; /* Firefox */
+    -webkit-box-shadow: 0px 0px 20px #333; /* Safari, Chrome */
+}
+.login-popup h1{
+	float: left;
+	width: 65%;
+	padding: 10px; 	
+	font-family: 'Sniglet', cursive;
+	font-size: 2em;
+	color: #E39893;
+}
+.close{
+	float: right;
+	font-family: 'Sniglet', cursive;
+	font-size: 2em;
+	color: #7F3B3C;
+}
+fieldset { 
+	border:none; 
+	float: left;
+}
+form.signin .textbox label { 
+	display:block; 
+	padding-bottom:7px; 
+}
+form.signin .textbox span { 
+	display:block;
+}
+form.signin .textbox input { 
+	background:#fff; 
+	border:3px solid #7F3B3C;
+	color:#F6D8DA;
+	font-size: 1.2em;
+	padding:15px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.button { 
+	float: left;
+	padding: 10px 20px;
+	background-color: #7F3B3C;
+	text-align: center;
+	border:none;
+	font-family: 'Sniglet', cursive;
+	font-size: 2em;
+	color: #ffffff;
+}
