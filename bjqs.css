@@ -3,7 +3,6 @@
 #slider_area{
     padding-top: 20px;
 }
-
 ul.bjqs{
     position:relative; 
     list-style:none;
@@ -12,42 +11,19 @@ ul.bjqs{
     overflow:hidden; 
     display:none;
 }
-
 li.bjqs-slide{
     position:absolute; 
     display:none;
 }
-
-ul.bjqs-controls{
-    list-style:none;
-    margin:0;
-    padding:0;
-    z-index:9999;
-}
-
-ul.bjqs-controls.v-centered li a{
-    position:absolute;
-}
-
-ul.bjqs-controls.v-centered li.bjqs-next a{
-    right:0;
-}
-
-ul.bjqs-controls.v-centered li.bjqs-prev a{
-    left:0;
-}
-
 ol.bjqs-markers{
     list-style: none; 
     padding: 0; 
     margin: 0; 
     width:100%;
 }
-
 ol.bjqs-markers.h-centered{
     text-align: center;
 }
-
 ol.bjqs-markers li{    
     background-color: #E47D7E;
     border-radius: 20px;
@@ -57,14 +33,12 @@ ol.bjqs-markers li{
     margin: 0 5px;
     width: 20px;
 }
-
 ol.bjqs-markers li a{
     display:inline-block;
     color: transparent;  
     width: 20px; 
     height: 20px;
 }
-
 p.bjqs-caption{
     display:block;
     width:96%;
@@ -73,7 +47,6 @@ p.bjqs-caption{
     position:absolute;
     bottom:0;
 }
-
 .active-marker a{    
     background-color: #ffffff;
     border-radius: 20px;
